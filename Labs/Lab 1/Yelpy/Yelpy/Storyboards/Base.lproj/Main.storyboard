@@ -29,31 +29,64 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="219"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17D-ua-1eA">
-                                                    <rect key="frame" x="20" y="11" width="300" height="50"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sUh-Jn-hBh" userLabel="HStack">
+                                                    <rect key="frame" x="50" y="5" width="314" height="70.333333333333329"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HPr-zT-eFV" userLabel="Label VStack">
+                                                            <rect key="frame" x="0.0" y="12.333333333333332" width="44.666666666666664" height="45.666666666666671"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17D-ua-1eA">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKf-PF-QvS">
+                                                                    <rect key="frame" x="0.0" y="25.333333333333336" width="41.333333333333336" height="20.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RAJ-8l-qL7" userLabel="Star VStack">
+                                                            <rect key="frame" x="49.666666666666657" y="0.0" width="264.33333333333337" height="70.333333333333329"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8uD-zf-8kl">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="264.33333333333331" height="50"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6K-2B-qVW">
+                                                                    <rect key="frame" x="0.0" y="50" width="264.33333333333331" height="20.333333333333329"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-qU-7ND">
-                                                    <rect key="frame" x="10" y="51.333333333333329" width="394" height="152.66666666666669"/>
+                                                    <rect key="frame" x="10" y="105.33333333333331" width="394" height="98.666666666666686"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="17D-ua-1eA" firstAttribute="centerX" secondItem="n8x-ox-hac" secondAttribute="centerX" id="1FJ-kI-0Lt"/>
-                                                <constraint firstItem="Vt2-qU-7ND" firstAttribute="top" secondItem="17D-ua-1eA" secondAttribute="bottom" constant="20" id="4eI-sn-PTT"/>
-                                                <constraint firstItem="17D-ua-1eA" firstAttribute="leading" secondItem="n8x-ox-hac" secondAttribute="leading" constant="50" id="79q-vZ-Yrh"/>
                                                 <constraint firstItem="Vt2-qU-7ND" firstAttribute="leading" secondItem="n8x-ox-hac" secondAttribute="leading" constant="10" id="A20-Sl-gi6"/>
+                                                <constraint firstItem="Vt2-qU-7ND" firstAttribute="top" secondItem="sUh-Jn-hBh" secondAttribute="bottom" constant="30" id="AVd-dW-1ts"/>
+                                                <constraint firstItem="sUh-Jn-hBh" firstAttribute="top" secondItem="n8x-ox-hac" secondAttribute="top" constant="5" id="Doa-Cp-maC"/>
                                                 <constraint firstAttribute="bottom" secondItem="Vt2-qU-7ND" secondAttribute="bottom" constant="15" id="Nvo-0e-1CI"/>
-                                                <constraint firstItem="17D-ua-1eA" firstAttribute="top" secondItem="n8x-ox-hac" secondAttribute="top" constant="11" id="OVQ-qb-sEq"/>
                                                 <constraint firstAttribute="trailing" secondItem="Vt2-qU-7ND" secondAttribute="trailing" constant="10" id="Siz-sb-FS1"/>
+                                                <constraint firstAttribute="trailing" secondItem="sUh-Jn-hBh" secondAttribute="trailing" constant="50" id="TOG-gx-3xc"/>
+                                                <constraint firstItem="sUh-Jn-hBh" firstAttribute="centerX" secondItem="n8x-ox-hac" secondAttribute="centerX" id="VFc-CD-VFL"/>
                                                 <constraint firstItem="Vt2-qU-7ND" firstAttribute="centerX" secondItem="n8x-ox-hac" secondAttribute="centerX" id="Yj5-2z-Spu"/>
-                                                <constraint firstAttribute="trailing" secondItem="17D-ua-1eA" secondAttribute="trailing" constant="50" id="oFw-Nx-uct"/>
+                                                <constraint firstItem="sUh-Jn-hBh" firstAttribute="leading" secondItem="n8x-ox-hac" secondAttribute="leading" constant="50" id="ncN-x2-lTP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="17D-ua-1eA" id="EJn-pn-tC6"/>
+                                            <outlet property="phoneNumberLabel" destination="nKf-PF-QvS" id="2vv-Df-7Xg"/>
                                             <outlet property="restaurantImage" destination="Vt2-qU-7ND" id="dzh-Tx-uzy"/>
+                                            <outlet property="reviewCountLabel" destination="g6K-2B-qVW" id="EHh-Fo-QHG"/>
+                                            <outlet property="starRatingImage" destination="8uD-zf-8kl" id="PUN-LF-b6y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

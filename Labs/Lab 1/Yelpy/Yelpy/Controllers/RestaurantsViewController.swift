@@ -36,7 +36,7 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
             guard let restaurants = restaurants else {
                 return
             }
-            print(restaurants)
+//            print(restaurants)
             self.restaurantsArray = restaurants
             self.tableView.reloadData() // reload data!
         }
@@ -60,6 +60,8 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
         // Set Label to the restaurant name for each cell
         cell.label.text = restaurant["name"] as? String ?? ""
         
+        cell.phoneNumberLabel.text = restaurant["display_phone"] as? String ?? ""
+        
         // Set Image of restaurant
         // 1. Get the image url string from the restaurant dictionary
         if let imageURLString = restaurant["image_url"] as? String {
@@ -68,6 +70,12 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
             // 3. Set image using the image url with AlamofireImage
             cell.restaurantImage.af.setImage(withURL: imageURL!)
         }
+        
+        let rating = restaurant["rating"] as? Float ?? 0.0
+        cell.starRatingImage.image = UIImage(named: String(rating))
+        
+        let review_count = restaurant["review_count"] as? Int ?? 0
+        cell.reviewCountLabel.text = String(review_count)
         
         return cell
     }

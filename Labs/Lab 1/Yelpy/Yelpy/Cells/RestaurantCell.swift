@@ -11,7 +11,10 @@ import UIKit
 class RestaurantCell: UITableViewCell {
 
     @IBOutlet var label: UILabel!
+    @IBOutlet var phoneNumberLabel: UILabel!
     @IBOutlet var restaurantImage: UIImageView!
+    @IBOutlet var starRatingImage: UIImageView!
+    @IBOutlet var reviewCountLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
