@@ -43,7 +43,7 @@ struct API {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
                 //2. Grab the business data and convert it to an array of dictionaries for each restaurant
-                let restaurants = dataDictionary["business"] as! [[String: Any]]
+                let restaurants = dataDictionary["businesses"] as! [[String: Any]]
                 
                 //3. Completion is an escaping method which allows the data to be used outside of the closure
                 return completion(restaurants)

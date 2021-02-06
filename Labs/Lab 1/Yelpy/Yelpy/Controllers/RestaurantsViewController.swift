@@ -26,6 +26,8 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.rowHeight = 300
+        
         getAPIData()
     }
     // ––––– TODO: Get data from API helper and retrieve restaurants
@@ -44,6 +46,7 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
     
     // numberOfRowInSection tells the table view how many rows, or cells in this case, to create.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("RestaurantsArray Count \(restaurantsArray.count)")
         return restaurantsArray.count
     }
     

@@ -22,25 +22,34 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="156" id="R1a-n5-1Fy" customClass="RestaurantCell" customModule="Yelpy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="156"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantCell" rowHeight="219" id="R1a-n5-1Fy" customClass="RestaurantCell" customModule="Yelpy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="219"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R1a-n5-1Fy" id="n8x-ox-hac">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R1a-n5-1Fy" id="n8x-ox-hac" userLabel="CellView">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="219"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17D-ua-1eA">
-                                                    <rect key="frame" x="20" y="68" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17D-ua-1eA">
+                                                    <rect key="frame" x="20" y="11" width="300" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-qU-7ND">
-                                                    <rect key="frame" x="154" y="14" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-qU-7ND">
+                                                    <rect key="frame" x="10" y="51.333333333333329" width="394" height="152.66666666666669"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="17D-ua-1eA" firstAttribute="centerX" secondItem="n8x-ox-hac" secondAttribute="centerX" id="1FJ-kI-0Lt"/>
+                                                <constraint firstItem="Vt2-qU-7ND" firstAttribute="top" secondItem="17D-ua-1eA" secondAttribute="bottom" constant="20" id="4eI-sn-PTT"/>
+                                                <constraint firstItem="17D-ua-1eA" firstAttribute="leading" secondItem="n8x-ox-hac" secondAttribute="leading" constant="50" id="79q-vZ-Yrh"/>
+                                                <constraint firstItem="Vt2-qU-7ND" firstAttribute="leading" secondItem="n8x-ox-hac" secondAttribute="leading" constant="10" id="A20-Sl-gi6"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vt2-qU-7ND" secondAttribute="bottom" constant="15" id="Nvo-0e-1CI"/>
+                                                <constraint firstItem="17D-ua-1eA" firstAttribute="top" secondItem="n8x-ox-hac" secondAttribute="top" constant="11" id="OVQ-qb-sEq"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vt2-qU-7ND" secondAttribute="trailing" constant="10" id="Siz-sb-FS1"/>
+                                                <constraint firstItem="Vt2-qU-7ND" firstAttribute="centerX" secondItem="n8x-ox-hac" secondAttribute="centerX" id="Yj5-2z-Spu"/>
+                                                <constraint firstAttribute="trailing" secondItem="17D-ua-1eA" secondAttribute="trailing" constant="50" id="oFw-Nx-uct"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="17D-ua-1eA" id="EJn-pn-tC6"/>
