@@ -10,13 +10,11 @@ import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
     var movies = [[String:Any]]()
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -34,12 +32,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             self.movies = dataDictionary["results"] as! [[String:Any]]
             
             self.tableView.reloadData()
-            
-            print(self.movies)
-              // TODO: Get the array of movies
-              // TODO: Store the movies in a property to use elsewhere
-              // TODO: Reload your table view data
-
            }
         }
         task.resume()
