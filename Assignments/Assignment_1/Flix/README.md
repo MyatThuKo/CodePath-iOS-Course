@@ -3,10 +3,10 @@
 This is the assignment 1 of CodePath iOS Course offered at City College of New York. This is an application where it shows 20 upcoming movies. 
 
 ### Things I learn 
-- How to create a TableView
-- How to create a custom TableViewCell 
-- How to create a Network Request
-- How to do an AutoLayout
+-[] How to create a TableView
+-[] How to create a custom TableViewCell 
+-[] How to create a Network Request
+-[] How to do an AutoLayout
 
 ### Gif Demo
 This is a screen recording from a real device and converted to gif.  
