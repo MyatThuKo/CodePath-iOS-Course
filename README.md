@@ -60,4 +60,4 @@ In the second part of the assignment, I will be learning
 - Protocols
 
 
-Check out the [CodePath.org iOS Course Syllabus](https://courses.codepath.org/snippets/ios_university/syllabus#heading-twitter-client) here. 
+Check out the [CodePath.org iOS Course Syllabus](https://courses.codepath.org/snippets/ios_university/syllabus) here. 
