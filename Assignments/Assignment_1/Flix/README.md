@@ -1,15 +1,25 @@
-## Assignment 1 - Flix Part 1 
+# Flix
 
-This is the assignment 1 of CodePath iOS Course offered at City College of New York. This is an application where it shows 20 upcoming movies. 
+Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-### Things I learn 
+---
 
-- [x] How to create a TableView
-- [x] How to create a custom TableViewCell 
-- [x] How to create a Network Request
-- [x] How to do an AutoLayout
+## Flix Part 1
 
-### Gif Demo
-This is a screen recording from a real device and converted to gif.  
-<img src="https://github.com/MyatThuKo/CodePath-iOS-Course/blob/main/Assignments/Assignment_1/Flix/flix_assignment1.gif" width="250">
- 
+### User Stories
+
+#### REQUIRED (10pts)
+- [x] (2pts) User sees an app icon on the home screen and a styled launch screen.
+- [x] (5pts) User can view and scroll through a list of movies now playing in theaters.
+- [x] (3pts) User can view the movie poster image for each movie.
+
+#### BONUS
+- [x] (2pt) User can view the app on various device sizes and orientations.
+- [x] (1pt) Run your app on a real device.
+
+### App Walkthrough GIF
+
+<img src="https://github.com/MyatThuKo/CodePath-iOS-Course/blob/main/Assignments/Assignment_1/Flix/flix_assignment1.gif" width=250><br>
+
+### Notes
+- I had difficulties trying to fix the constraints but I was able to resolve it with the help of TA from CodePath. 
