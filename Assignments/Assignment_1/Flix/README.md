@@ -2,6 +2,24 @@
 
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
+## Flix Part 2
+
+### User Stories
+
+#### REQUIRED (10pts)
+- [x] (5pts) User can tap a cell to see more details about a particular movie.
+- [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+
+#### BONUS
+- [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
+- [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
+
+### App Walkthrough GIF
+`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
+
+### Notes
+- Faced difficulties when trying to pull up the right coco class in the assistant to create UIOutlet
+
 ---
 
 ## Flix Part 1
@@ -22,4 +40,4 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="https://github.com/MyatThuKo/CodePath-iOS-Course/blob/main/Assignments/Assignment_1/Flix/flix_assignment1.gif" width=250><br>
 
 ### Notes
-- I had difficulties trying to fix the constraints but I was able to resolve it with the help of TA from CodePath. 
+- I had difficulties trying to fix the constraints but I was able to resolve it with the help of TA from CodePath.
