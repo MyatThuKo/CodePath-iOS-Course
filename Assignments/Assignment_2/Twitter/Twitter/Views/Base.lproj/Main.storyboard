@@ -173,13 +173,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HU-i8-gqZ">
+                                <rect key="frame" x="10" y="226" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QgI-vv-UUq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3HU-i8-gqZ" firstAttribute="leading" secondItem="QgI-vv-UUq" secondAttribute="leading" constant="10" id="BON-LD-kCy"/>
                             <constraint firstItem="Jvf-yi-ya1" firstAttribute="top" secondItem="QgI-vv-UUq" secondAttribute="top" id="GwH-vE-gbM"/>
                             <constraint firstItem="QgI-vv-UUq" firstAttribute="trailing" secondItem="Jvf-yi-ya1" secondAttribute="trailing" id="S10-3d-871"/>
                             <constraint firstItem="Jvf-yi-ya1" firstAttribute="leading" secondItem="QgI-vv-UUq" secondAttribute="leading" id="bJI-hN-7uO"/>
+                            <constraint firstItem="3HU-i8-gqZ" firstAttribute="top" secondItem="Jvf-yi-ya1" secondAttribute="bottom" constant="10" id="qrZ-hT-l7u"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Md0-SC-Q09">
@@ -197,6 +205,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="characterCountLabel" destination="3HU-i8-gqZ" id="fqe-u5-dmV"/>
                         <outlet property="tweetTextView" destination="Jvf-yi-ya1" id="k5o-dc-NDl"/>
                     </connections>
                 </viewController>
