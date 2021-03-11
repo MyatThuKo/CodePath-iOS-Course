@@ -29,12 +29,12 @@ In the first part of the assignment, I learned
 - Networking Part 1
 - Table Views  
 
-*[Check Source Code for Part 1](https://github.com/MyatThuKo/CodePath-iOS-Course/tree/main/Assignments/Assignment_1/Flix)*
-
 In the second part of the assignment, I will be learning 
 - Navigation
 - Passing Data 
 - MVC
+
+*[Check Code for the Flixter App](https://github.com/MyatThuKo/CodePath-iOS-Course/tree/main/Assignments/Assignment_1/Flix)*
 
 ### Twitter - Assignment 2 
 
@@ -46,6 +46,8 @@ In the first part of the assignment, I will be learning
 In the second part of the assignment, I will be learning 
 - Animations (Lottie)
 - Skeleton View
+
+*[Check Code for the Twitter Clone App](https://github.com/MyatThuKo/CodePath-iOS-Course/tree/main/Assignments/Assignment_2/Twitter)*
 
 ### Instagram - Assignment 3 
 
