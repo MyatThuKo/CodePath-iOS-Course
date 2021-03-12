@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 
 The following **bonus** features are implemented:
 
-- [ ] When composing a tweet, user sees a countdown for the number of characters remaining for the tweet (out of 280) (2pts)
+- [x] When composing a tweet, user sees a countdown for the number of characters remaining for the tweet (out of 280) (2pts)
 - [ ] User can view their profile in a profile tab. (3pts)
 - [ ] User sees embedded images in tweet if available. (3pts)
 
@@ -22,7 +22,11 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+#### Composing, Favoriting and Retweeting a tweet
 <img src='http://g.recordit.co/ImJFhRj91h.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
+
+#### Tracking the character count when composing a tweet
+<img src='http://g.recordit.co/RfYr1lz9lW.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
 # Twitter - Part I
 
