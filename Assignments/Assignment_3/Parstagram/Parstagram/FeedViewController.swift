@@ -15,12 +15,23 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var posts = [PFObject]()
     
+    let pullRefreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         feedTableView.delegate = self
         feedTableView.dataSource = self
         // Do any additional setup after loading the view.
+        
+        pullRefreshControl.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        feedTableView.refreshControl = pullRefreshControl
+    }
+    
+    @objc func loadData() {
+        self.feedTableView.reloadData()
+        
+        self.pullRefreshControl.endRefreshing()
     }
     
     override func viewDidAppear(_ animated: Bool) {
