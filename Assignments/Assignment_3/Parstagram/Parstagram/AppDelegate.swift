@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Thread.sleep(forTimeInterval: 4.0)
+        Thread.sleep(forTimeInterval: 2.5)
         // Getting API Key from plist
         guard let filePath = Bundle.main.path(forResource: "Keys", ofType: "plist") else {
             fatalError("Couldn't find file 'Keys.plist'.")

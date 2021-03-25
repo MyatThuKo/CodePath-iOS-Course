@@ -18,6 +18,7 @@
 		E2A776062602F3F60074BD24 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2A776052602F3F60074BD24 /* Keys.plist */; };
 		E2A776092602F6D40074BD24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A776082602F6D40074BD24 /* LoginViewController.swift */; };
 		E2BFF56A260400D500D2B67A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFF569260400D500D2B67A /* CameraViewController.swift */; };
+		E2DB9562260C15FA008B2025 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB9561260C15FA008B2025 /* CommentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E2A776052602F3F60074BD24 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		E2A776082602F6D40074BD24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E2BFF569260400D500D2B67A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E2DB9561260C15FA008B2025 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				E2A775F52602F19C0074BD24 /* LaunchScreen.storyboard */,
 				E2A775F82602F19C0074BD24 /* Info.plist */,
 				E2A776052602F3F60074BD24 /* Keys.plist */,
+				E2DB9561260C15FA008B2025 /* CommentTableViewCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				E2BFF56A260400D500D2B67A /* CameraViewController.swift in Sources */,
 				E2A775EF2602F19C0074BD24 /* FeedViewController.swift in Sources */,
 				E2A775EB2602F19C0074BD24 /* AppDelegate.swift in Sources */,
+				E2DB9562260C15FA008B2025 /* CommentTableViewCell.swift in Sources */,
 				E2A775ED2602F19C0074BD24 /* SceneDelegate.swift in Sources */,
 				E29666612604098400EB9B5B /* PostTableViewCell.swift in Sources */,
 			);
