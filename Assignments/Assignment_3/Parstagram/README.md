@@ -20,10 +20,9 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-<div style="display: flex">
+Here's a walkthrough of implemented user stories: <br />
 Remembering User's Login Logout Status and Adding New Comment 
+<div style="display: flex">
 <img src='https://github.com/MyatThuKo/CodePath-iOS-Course/blob/main/Assignments/Assignment_3/Parstagram/Gifs/LoginLogout.gif' title='Login Logout Video Walkthrough' width='250' alt='Login Logout Video Walkthrough' />
 <img src='https://github.com/MyatThuKo/CodePath-iOS-Course/blob/main/Assignments/Assignment_3/Parstagram/Gifs/AddComment.gif' title='New Comment Video Walkthrough' width='250' alt='New Comment Video Walkthrough' />
 </div>
